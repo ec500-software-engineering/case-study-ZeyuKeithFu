@@ -19,7 +19,8 @@ An user **MUST** sign in at a specific instance. However, users do not specify i
 ### Addressing / Following people   
 Mastodon usernames consist of two parts. An example can be ```@aznable@cmx.im``` including:
 * A ```local username``` (@aznable)   
-* A ```domain of the server``` (@cmx.im)
+* A ```domain of the server``` (@cmx.im)   
+When addressing or following another user, both of these have to be specified.   
 ## Technology Selections
 
 ## APIs
