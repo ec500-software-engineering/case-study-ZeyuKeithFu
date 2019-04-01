@@ -1,5 +1,5 @@
 # Mastodon Case Study
-[Mastodon](https://joinmastodon.org/) is a decentralized social network with no ads and no corporate surveillance. 
+[Mastodon](https://github.com/tootsuite/mastodon) is a decentralized social network with no ads and no corporate surveillance. 
 
 ## Decentralization
 
@@ -15,7 +15,7 @@ Note that, any timeline strictly sorting by posting time.
    
 **In practical terms**: A ```Mastodon universe``` is the whole universe of social networks including Twitter, Facebook, Instagram etc., an ```instance``` is a specific social network, say Twitter for example. In Mastodon, an ```user``` in Twitter is also an user in the whole universe and can interact with users in Facebook or Instagram,  for example, a Twitter user can follow a Facebook user and see the content post by an Instagram user.
 ### Signing in and posting   
-An user **MUST** sign in at a specific instance. However, users do not specify instance when posting. In other words, although an user stays on only one planet, he/she is posting to the whole universe.   
+An user **MUST** sign in at a specific instance. However, users do not specify instance when posting. In other words, although an user stays on only one planet, he/she is posting to the whole universe. [Here](https://joinmastodon.org/) is a list of existing instances.   
 ### Addressing / Following people   
 Mastodon usernames consist of two parts. An example can be ```@aznable@cmx.im``` including:
 * A ```local username``` (@aznable)   
