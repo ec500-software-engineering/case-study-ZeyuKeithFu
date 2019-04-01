@@ -19,7 +19,8 @@ Mastodon usernames consist of two parts. An example can be ```@aznable@cmx.im```
 * A ```domain of the server``` (@cmx.im)  
    
 When addressing or following another user, both of these have to be specified.   
-
+   
+   
 ## Decentralization
 In traditional centralized social networks such as Twitter, Facebook or Instagram, a central node is used by all users. Unlike these social networks, Mastodon has multiple nodes that any numbers of users can use. Meanwhile, all the nodes are connected so that they can interact with each other. Decentralization gives Mastodon some good features that other social networks will never have:
 * **No ads**   
