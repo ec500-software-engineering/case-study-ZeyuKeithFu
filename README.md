@@ -28,8 +28,12 @@ Mastodon is open source social network, which allows people to create their own 
 * **Cannot be blocked**   
 Even though a Mastodon user only join one instance, all the contents from other sites can be viewed. When one instance is blocked, you can just switch to another instance and you can still browse all the contents. Even though all the existing instances are blocked (in a very very small probability), you can still open a new instance and the contents in Mastodon universe are still there.   
 
-## Technology Selections
-TODO   
+## CI Test
+
+## Interesting Functions
+### Exporting and importing data and change to another instance   
+### Voting Toots   
+### Direct message to users from other instances
 
 ## APIs
 Mastodon provide [APIs](https://docs.joinmastodon.org/api/libraries/) for various of programming languages. In this part I tested Mastodon python API which can be installed by:   
