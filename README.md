@@ -28,14 +28,70 @@ Mastodon is open source social network, which allows people to create their own 
 * **Cannot be blocked**   
 Even though a Mastodon user only join one instance, all the contents from other sites can be viewed. When one instance is blocked, you can just switch to another instance and you can still browse all the contents. Even though all the existing instances are blocked (in a very very small probability), you can still open a new instance and the contents in Mastodon universe are still there.   
 
+## Technology Selection   
+Mastodon is a **Ruby on Rails** application with a **React.js** front-end.
+* ```Ruby on Rails``` powers the REST API and other web pages
+* ```React.js``` and Redux are used for the dynamic parts of the interface
+* ```Node.js``` powers the streaming API   
+   
+A standard Mastodon development environment requires ```Ruby```, ```Node.js```, ```PostgreSQL``` and ```Redis```.   
+   
+**Important libraries:**   
+   
+* **Ruby**
+   + ```haml```, a templating language
+   + ```devise```, for authentication
+   + ```doorkeeper```, for acting as an OAuth 2 provider
+   + ```paperclip```, for file uploads and attachments
+   + ```sidekiq```, for background processing
+* **JavaScript**
+   + ```immutable```, for immutable data structures
+   + ```react```, for rendering the dynamic web application
+   + ```react-redux```, for managing React state
+   + ```react-router-dom```, for navigation within React
+   + ```react-intl```, for localizations within React
+   
+   
+**Ruby Code Structure:**   
+   
+![](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/Ruby_structure.png)
+   
 ## CI Test
+**10 checks on CircleCI including:**
+* build
+* check-i18n
+* install
+* install-ruby2.4
+* install-ruby2.5
+* install-ruby2.6
+* test-ruby2.4
+* test-ruby2.5
+* test-ruby2.6
+* test-webui
 
-## Interesting Functions
-### Exporting and importing data and change to another instance   
-### Voting Toots   
-### Direct message to users from other instances
 
-## APIs
+## Functionality Demo
+Based on decentralization, some interesting features is built in Mastodon, which are not owned by other social network applications, including:
+### 1. Change to another instance by exporting and importing user data
+Sometimes you may want to explore new things and change to another Mastodon instance to stay (just like sometimes you want to use twitter but not facebook). To do this, you can simply export your user data before you change instance.   
+   
+![](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/data_export.png)   
+   
+After you moved to a new instance and you want to recover all your settings and datas (your followings, your favorites, your pinned toots etc.,), you can import your ```.CSV``` format user data and everything will be same as before except you are now in another instance.   
+   
+![](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/data_import.png)   
+   
+This action is like you are move from ```twitter``` to ```instagram``` but you are still following the users you used to follow and can still see your liked tweets. Obviously, these works cannot be done on neither twitter nor instagram.
+   
+   
+### 2. Direct message to users from other instances   
+Imaging that you are in a country that ```Line``` is popular used and you only use Line for social connections. A classmate of you is from a country that ```WhatsApp``` is popular used and he/she only use WhatsApp. What if you want to discuss about courseworks online? Either one of you change to the other social network or you both register for a third social network. In Mastodon, however, this work can be done really fast because direct messages can be created between users from different instances.   
+   
+![](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/dm.png)   
+   
+(I received direct messages from my friends in different instances.)
+
+## API Demo
 Mastodon provide [APIs](https://docs.joinmastodon.org/api/libraries/) for various of programming languages. In this part I tested Mastodon python API which can be installed by:   
 ```
 pip install Mastodon.py
