@@ -83,13 +83,19 @@ After you moved to a new instance and you want to recover all your settings and 
    
 This action is like you are move from ```twitter``` to ```instagram``` but you are still following the users you used to follow and can still see your liked tweets. Obviously, these works cannot be done on neither twitter nor instagram.
    
-   
 ### 2. Direct message to users from other instances   
 Imaging that you are in a country that ```Line``` is popular used and you only use Line for social connections. A classmate of you is from a country that ```WhatsApp``` is popular used and he/she only use WhatsApp. What if you want to discuss about courseworks online? Either one of you change to the other social network or you both register for a third social network. In Mastodon, however, this work can be done really fast because direct messages can be created between users from different instances.   
    
 ![](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/dm.png)   
    
-(I received direct messages from my friends in different instances.)
+(I received direct messages from my friends in different instances.)   
+   
+### 3. Chronological timeline
+Nowadays most social networks use algorithmic timeline. That is why you often see celebrities' posts or ads shown above your real friends' posts. In Mastodon however, timeline strictly follows chronological rule. Latest post always shows first. Three kinds of timeline are included in Mastodon:
+* ```Home timeline```, the timeline of your following users
+* ```Local timeline```, the timeline of all the toots in your instance
+* ```Federated timeline```, the timeline of toots from all Mastodon users
+   
 
 ## API Demo
 Mastodon provide [APIs](https://docs.joinmastodon.org/api/libraries/) for various of programming languages. In this part I tested Mastodon python API which can be installed by:   
@@ -99,3 +105,12 @@ pip install Mastodon.py
 In ```test_API.py```, I posted a toot to my Mastodon account using the API.
    
 ![](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/first_toot.png)
+   
+   
+## Defect
+### Inconvenient direct message function
+In Mastodon, although DMs can be created between users from different instances, they are still implemented by toots. A set of DMs is actually a toot only visible to the user in the conversation. And by replying this toot, two users are likely talking to each other. This can be sometimes not that convenient, say if you want to check your conversation history. And sometimes it is not that user-friendly.   
+I think a chatting window function is extremely needed in Mastodon.   
+   
+### Comparatively small user groups
+The number of Mastodon users is not big. Even the largest instance of Mastodon has only 53K people (not a big number compared to other social networks). This may sometimes make Mastodon less attractive to new users.
