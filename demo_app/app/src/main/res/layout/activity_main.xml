@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/top" />
+
+    <ImageView
+        android:id="@+id/bottomImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/bottom" />
+
+    <LinearLayout
+        android:id="@+id/infoStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:backgroundTint="@android:color/tertiary_text_dark"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/tertiary_text_dark"
+            android:hint="\@" />
+
+        <TextView
+            android:id="@+id/domainName"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Instance" />
+
+        <EditText
+            android:id="@+id/domainNameText"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@android:color/tertiary_text_dark"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@android:color/tertiary_text_dark"
+            android:hint="\@" />
+
+        <TextView
+            android:id="@+id/pwdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/pwdEditText"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@android:color/tertiary_text_dark"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/tertiary_text_dark"
+            android:ems="10"
+            android:hint="Your password" />
+
+        <Button
+            android:id="@+id/userLogInButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:text="User log in"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/instanceButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:text="Browse instance"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
