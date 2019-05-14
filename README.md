@@ -117,6 +117,11 @@ In this part I made a demo Android App by Mastodon Java API [mastodon4j](https:/
    
 <img src="https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/appdemo2.png" width="720" height="640">
    
+* And if you enter your Mastondon username and password with the instance specified, after clicking ```User Log in```, you can see all the contents posted by people you followed.
+   
+<img src="https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/app3.png" width="720" height="640">
+   
+* The ```refresh``` button allows you to see new updates on your timeline.
 
    
 ## Defect
