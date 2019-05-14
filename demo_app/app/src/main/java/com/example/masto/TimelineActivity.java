@@ -34,8 +34,7 @@ public class TimelineActivity extends AppCompatActivity {
         @Override
         protected Void doInBackground(String... strings) {
 
-            // String myaccessToken = apps.getAccessToken("d6847806db9ff5ff3894b173ff5258ee61ff5c341ea8bc0e014113facabe04ae", "add86ce5ca853cf9d4835ceb760e3119e15f7bd71a29703c50d9ef1cc7441f3c", "e4dce8290a6c9d6759b2a9daf192652b9d661f971aa5df7f0bf87eb1ea2ba9f1").execute().getAccessToken();
-            String myaccessToken = "6b49f76e710d4f7be1b2bcdc77cf0238eaeaf48743aa2bc096c945e30cf44d5f";
+            String myaccessToken = "YOUR_TOKEN_HERE";
             MastodonClient client = new MastodonClient.Builder(strings[0], new OkHttpClient.Builder(), new Gson()).accessToken(myaccessToken).build();
             Timelines mytimelines = new Timelines(client);
 
