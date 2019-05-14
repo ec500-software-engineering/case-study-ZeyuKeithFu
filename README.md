@@ -107,7 +107,7 @@ In ```test_API.py```, I posted a toot to my Mastodon account using the API.
 ![](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/blob/master/assets/first_toot.png)
    
 ## Demo App
-In this part I made a demo Android App by Mastodon Java API [mastodon4j](https://github.com/sys1yagi/mastodon4j). The app is located in ["app"]() directory. By using this app, you can browse the timeline of a public instance or log in to your own Mastodon account and browse your home timeline.   
+In this part I made a demo Android App by Mastodon Java API [mastodon4j](https://github.com/sys1yagi/mastodon4j). The app is located in [demo_app](https://github.com/ec500-software-engineering/case-study-ZeyuKeithFu/tree/master/demo_app) directory. By using this app, you can browse the timeline of a public instance or log in to your own Mastodon account and browse your home timeline.   
 
 * In the log in page:
    
